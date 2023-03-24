@@ -1,0 +1,120 @@
+:root {
+  --fsz-display: 56px;
+  --fsz-headline: 24px;
+  --fsz-md: 20px;
+  --fsz-sm: 16px;
+  --fsz-xs: 14px;
+  --light-red: #f05f5d;
+  --color-txt-primary: #1e1f22;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  color: var(--color-txt-primary);
+  background-color: #f0f1f4;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  margin-top: 60px;
+}
+img:first-of-type {
+  height: 16px;
+}
+img:last-of-type {
+  height: 36px;
+}
+h1 {
+  font-size: var(--fsz-display);
+  font-weight: bold;
+  max-width: 18ch;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.txt--is-red {
+  color: var(--light-red);
+}
+main {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+}
+form {
+  width: 100%;
+  max-width: 400px;
+  padding: 36px 32px 40px 32px;
+  background-color: #fff;
+  border-radius: 24px;
+}
+form h2 {
+  font-size: var(--fsz-headline);
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: 125%;
+}
+.fieldset-wrapper {
+  margin-bottom: 18px;
+}
+label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+input,
+select {
+  width: 100%;
+  display: block;
+  padding: 12px 16px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 2px solid #ecedf2;
+}
+input::placeholder {
+  color: #8e8e90;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  display: inline-block;
+}
+input[type="checkbox"] + label {
+  display: inline;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select {
+  background-image: url("img/carret.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  color: #8e8e90;
+}
+
+.fieldset-wrapper.checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.fieldset-wrapper.checkbox label {
+  margin-bottom: 0px;
+}
+
+form button {
+  width: 100%;
+  padding: 18px;
+  background-color: var(--light-red);
+  border: none;
+  color: #fff;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.submit-error, .submit-success {
+  display: none;
+}

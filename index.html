@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Webistry X Le Wagon Technical Test</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="./img/webistry.svg" alt="Webistry Logo, a colorful chart with webistry typeface">
+		<img src="./img/lewagon.svg" alt="Le Wagon Logo, a red image of a bus">
+	</header>
+	<main>
+		<h1><span class="txt--is-red">Level up</span> your coding skills with Webistry.</h1>
+		<form id="contact-form" name="webistry" method="POST">
+			<h2>Let’s get started by knowing more about you.</h2>
+			<div class="fieldset-wrapper">
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="Name">
+			</div>
+			<div class="fieldset-wrapper">
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="Email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+			</div>
+			<div class="fieldset-wrapper">
+				<label for="language">What’s your favorite coding language?</label>
+				<select name="language" id="language">
+					<option value="Javascript">Javascript</option>
+					<option value="ReactJS">ReactJS</option>
+					<option value="SolidJS">SolidJS</option>
+					<option value="PHP">PHP</option>
+				</select>
+			</div>
+			<div class="fieldset-wrapper checkbox">
+				<input type="checkbox" name="accept-terms" id="accept-terms">
+				<label for="accept-terms" class="">The information provided above is accurate</label>
+			</div>
+			<button type="submit">Level Up</button>
+			<div class="submit-success">
+				<p>Message sent!🎉</p>
+			</div>
+			<div class="submit-error">
+				<p>Error.</p>
+			</div>
+		</form>
+	</main>
+</body>
+
+</html>
